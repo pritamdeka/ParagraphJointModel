@@ -15,7 +15,7 @@ if __name__ == "__main__":
     argparser.add_argument('--corpus_file', type=str)
     argparser.add_argument('--k_retrieval', type=int)
     argparser.add_argument('--claim_retrieved_file', type=str)
-    
+    args = argparser.parse_args()
     claim_file = args.claim_file
     corpus_file = args.corpus_file
     
